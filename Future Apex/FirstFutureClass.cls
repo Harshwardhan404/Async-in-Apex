@@ -13,6 +13,13 @@ public static void futureMethod(){
 // FirstFutureClass.futureMethod();
 
 
+
+// we can only pass primitive data types (like String, Integer, etc.) or collections 
+//of primitive data types as parameters to a future method.
+// this is because the values can change between the time the method is called
+// and the time it is executed, which can lead to unexpected results.
+
+
 // The @future annotation allows you to run methods asynchronously in Apex.
 // This means that the method will be executed in the background, allowing the user to 
 //continue using the application without waiting for the method to complete.
@@ -35,8 +42,6 @@ public static void futureMethod(){
 //check the status of the job
 
 
-// we can only pass primitive data types (like String, Integer, etc.) or collections 
-//of primitive data types as parameters to a future method.
 // Future methods cannot be called from a constructor, a trigger, or another future method.
 // They can only be called from a static context, such as a static method or a static variable.
 // Future methods are executed in the order they are called, but they do not guarantee 
